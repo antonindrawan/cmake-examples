@@ -13,6 +13,8 @@ set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 set(VISIBILITY_INLINES_HIDDEN 1)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 add_subdirectory(find_package_boost)
 add_subdirectory(shared_library)
 add_subdirectory(transitive_dependency_using_export)
