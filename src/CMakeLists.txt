@@ -2,8 +2,11 @@ cmake_minimum_required(VERSION 3.10)
 
 project(cmake-examples)
 
+# Use GNU install dirs by default. The CMAKE_INSTALL_<dir> can be overriden from cmake if needed.
+include(GNUInstallDirs)
+
 # Set the rpath values
-set(CMAKE_INSTALL_RPATH "$ORIGIN/../lib")
+set(CMAKE_INSTALL_RPATH "$ORIGIN/../${CMAKE_INSTALL_LIBDIR}")
 set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 # Don't export all symbols by default

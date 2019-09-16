@@ -9,5 +9,5 @@ target_include_directories(${PROJECT_NAME}
 
 install(
     TARGETS ${PROJECT_NAME}
-    LIBRARY DESTINATION lib
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
