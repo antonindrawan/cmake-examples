@@ -3,7 +3,8 @@ project(transitive_dependency_using_export)
 #[[
     GIVEN
         An app depends on ComponentA (a shared library)
-        ComponentA depends on ComponentB (boost shared libraries)
+        ComponentA depends on Boost shared libraries
+        ComponentA depends on ComponentB (static library)
     WHEN
         The app uses ComponentA
     THEN
@@ -14,3 +15,4 @@ project(transitive_dependency_using_export)
 
 add_subdirectory(App)
 add_subdirectory(ComponentA)
+add_subdirectory(ComponentB)

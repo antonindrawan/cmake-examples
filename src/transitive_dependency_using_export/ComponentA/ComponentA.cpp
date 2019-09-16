@@ -1,5 +1,7 @@
 #include "ComponentA.hpp"
 
+#include <ComponentB.hpp>
+
 #include <boost/filesystem.hpp>
 
 namespace cmake_examples {
@@ -14,6 +16,11 @@ std::tuple<bool, std::uint64_t> ComponentA::GetDiskSpaceAvailableInBytes() const
     }
 
     return std::make_tuple(true, spaceInfo.available);
+}
+
+std::string ComponentA::GetComponentBName() const {
+    ComponentB componentB;
+    return componentB.GetComponentName();
 }
 
 }
