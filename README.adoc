@@ -1,0 +1,3 @@
+= cmake-examples
+
+A collection of cmake examples
