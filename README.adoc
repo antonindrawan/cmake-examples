@@ -1,3 +1,5 @@
 = cmake-examples
 
+image:https://travis-ci.org/antonindrawan/cmake-examples.svg?branch=master["Build Status", link="https://travis-ci.org/antonindrawan/cmake-examples"]
+
 A collection of cmake examples
