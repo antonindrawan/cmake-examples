@@ -1,0 +1,18 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+
+# Ubuntu 18
+dist: bionic
+
+addons:
+  apt:
+    update: true
+    packages:
+    - ninja-build
+    - libboost-filesystem-dev
+
+sudo: false
+
+script: ./build.sh
